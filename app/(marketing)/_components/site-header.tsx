@@ -35,10 +35,10 @@ export function SiteHeader() {
           {/* Enhanced Logo Section */}
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <div className="w-12 h-12 bg-yellow-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+              <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                 <Zap className="h-7 w-7 text-black" />
               </div>
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full border-2 border-white"></div>
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-primary/80 rounded-full border-2 border-white"></div>
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-bold text-foreground">
@@ -58,15 +58,15 @@ export function SiteHeader() {
                 <Link href="#features" className="flex items-center space-x-1 text-muted-foreground hover:text-foreground transition-colors font-medium group">
                   <span>Features</span>
                   <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-500 group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
                 </Link>
 
                 {/* Dropdown Menu */}
                 <div className="absolute top-full left-0 mt-2 w-64 bg-card rounded-xl shadow-xl border border-border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
                   <div className="p-4 space-y-3">
                     <Link href="#" className="flex items-center space-x-3 p-2 rounded-lg hover:bg-muted transition-colors">
-                      <div className="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
-                        <Rocket className="h-4 w-4 text-yellow-600" />
+                      <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Rocket className="h-4 w-4 text-primary/90" />
                       </div>
                       <div>
                         <div className="font-medium text-foreground">Performance</div>
@@ -74,8 +74,8 @@ export function SiteHeader() {
                       </div>
                     </Link>
                     <Link href="#" className="flex items-center space-x-3 p-2 rounded-lg hover:bg-muted transition-colors">
-                      <div className="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
-                        <Shield className="h-4 w-4 text-yellow-600" />
+                      <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Shield className="h-4 w-4 text-primary/90" />
                       </div>
                       <div>
                         <div className="font-medium text-foreground">Security</div>
@@ -83,8 +83,8 @@ export function SiteHeader() {
                       </div>
                     </Link>
                     <Link href="#" className="flex items-center space-x-3 p-2 rounded-lg hover:bg-muted transition-colors">
-                      <div className="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
-                        <Users className="h-4 w-4 text-yellow-600" />
+                      <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Users className="h-4 w-4 text-primary/90" />
                       </div>
                       <div>
                         <div className="font-medium text-foreground">Components</div>
@@ -97,17 +97,17 @@ export function SiteHeader() {
 
               <Link href="/pricing" className="relative text-muted-foreground hover:text-foreground transition-colors font-medium group">
                 Pricing
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-500 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
               </Link>
 
               <Link href="/docs" className="relative text-muted-foreground hover:text-foreground transition-colors font-medium group">
                 Docs
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-500 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
               </Link>
 
               <Link href="/about" className="relative text-muted-foreground hover:text-foreground transition-colors font-medium group">
                 About
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-500 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
               </Link>
             </div>
 
@@ -126,7 +126,7 @@ export function SiteHeader() {
                 <Button variant="ghost" size="sm" className="w-9 h-9 p-0 hover:bg-muted text-muted-foreground hover:text-foreground">
                   <Bell className="h-4 w-4" />
                 </Button>
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-500 rounded-full border-2 border-background"></div>
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full border-2 border-background"></div>
               </div>
 
               {/* Divider */}
@@ -142,7 +142,7 @@ export function SiteHeader() {
                   Sign In
                 </Button>
                 <Button
-                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2.5 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  className="bg-primary hover:bg-primary/90 text-black font-semibold px-6 py-2.5 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
                   <span className="flex items-center">
                     Get Started
@@ -214,7 +214,7 @@ export function SiteHeader() {
                   Sign In
                 </Button>
                 <Button
-                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold shadow-lg"
+                  className="w-full bg-primary hover:bg-primary/90 text-black font-semibold shadow-lg"
                 >
                   Get Started
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -226,7 +226,7 @@ export function SiteHeader() {
       </div>
 
       {/* Enhanced Premium Status Bar */}
-      <div className="bg-yellow-500 text-black text-center py-3">
+      <div className="bg-primary text-black text-center py-3">
         <div className="flex items-center justify-center space-x-3">
           <div className="flex items-center space-x-2">
             <div className="w-2 h-2 bg-blue-200 rounded-full"></div>

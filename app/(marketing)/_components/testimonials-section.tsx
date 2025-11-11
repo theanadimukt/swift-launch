@@ -6,7 +6,7 @@ export function TestimonialsSection() {
   return (
     <section className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
-        <Badge variant="secondary" className="mb-4 bg-yellow-100 text-yellow-700">Testimonials</Badge>
+        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary">Testimonials</Badge>
         <h2 className="text-4xl font-bold text-foreground mb-4">Loved by Developers</h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           See what our community has to say about SwiftLaunch
@@ -40,7 +40,7 @@ export function TestimonialsSection() {
           <Card key={index} className="border border-border shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 bg-card">
             <CardHeader>
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-2xl">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-2xl">
                   {testimonial.avatar}
                 </div>
                 <div>
@@ -50,7 +50,7 @@ export function TestimonialsSection() {
               </div>
               <div className="flex space-x-1 mt-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="h-4 w-4 fill-yellow-400 text-primary/80" />
                 ))}
               </div>
             </CardHeader>

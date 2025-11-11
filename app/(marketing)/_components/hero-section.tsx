@@ -8,7 +8,7 @@ export function HeroSection() {
       {/* Background Elements */}
       <div className="absolute inset-0">
         {/* Subtle floating orbs */}
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-yellow-100 dark:bg-yellow-50 rounded-full filter blur-3xl opacity-30 dark:opacity-60"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 dark:bg-primary/5 rounded-full filter blur-3xl opacity-30 dark:opacity-60"></div>
         <div className="absolute bottom-1/4 right-1/3 w-48 h-48 bg-purple-100 dark:bg-purple-50 rounded-full filter blur-3xl opacity-20 dark:opacity-40"></div>
 
         {/* Grid pattern */}
@@ -23,7 +23,7 @@ export function HeroSection() {
 
             {/* Badge */}
             <div className="inline-flex items-center gap-3">
-              <div className="flex items-center bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+              <div className="flex items-center bg-primary text-black px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                 <div className="w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse"></div>
                 🏆 Product of the day
                 <span className="ml-2 bg-black/20 px-2 py-0.5 rounded text-xs text-white">2nd</span>
@@ -35,7 +35,7 @@ export function HeroSection() {
               <h1 className="font-display text-display-2 font-semibold text-foreground lg:text-display-1">
                 <span className="block">Launch your startup</span>
                 <span className="block">in days, </span>
-                <span className="relative inline-block bg-yellow-500 text-black px-3 py-1 rounded-lg transform -rotate-1 shadow-lg">
+                <span className="relative inline-block bg-primary text-black px-3 py-1 rounded-lg transform -rotate-1 shadow-lg">
                   not weeks
                 </span>
               </h1>
@@ -48,7 +48,7 @@ export function HeroSection() {
 
             {/* CTA Button */}
             <div className="space-y-3">
-              <button className="group bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center">
+              <button className="group bg-primary hover:bg-primary/90 text-black font-bold text-lg px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center">
                 <Zap className="h-5 w-5 mr-2" />
                 Get SwiftLaunch
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -72,7 +72,7 @@ export function HeroSection() {
               </div>
               <div className="flex items-center space-x-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="h-3 w-3 fill-yellow-400 text-primary/80" />
                 ))}
               </div>
               <span className="text-slate-600 font-medium text-sm">
@@ -84,7 +84,7 @@ export function HeroSection() {
             <div className="bg-muted border border-border rounded-lg p-3 font-mono text-sm max-w-sm">
               <div className="flex items-center space-x-1 mb-1">
                 <div className="w-2 h-2 bg-red-400 rounded-full"></div>
-                <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                <div className="w-2 h-2 bg-primary/80 rounded-full"></div>
                 <div className="w-2 h-2 bg-green-400 rounded-full"></div>
               </div>
               <div className="text-muted-foreground">
@@ -108,9 +108,9 @@ export function HeroSection() {
               </div>
 
               {/* Center Logo with Glow Effect */}
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-yellow-500 rounded-2xl flex items-center justify-center shadow-2xl z-20 hover:scale-105 transition-transform duration-300">
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-primary rounded-2xl flex items-center justify-center shadow-2xl z-20 hover:scale-105 transition-transform duration-300">
                 <Zap className="h-10 w-10 text-black" />
-                <div className="absolute inset-0 bg-yellow-400/20 rounded-2xl blur-xl"></div>
+                <div className="absolute inset-0 bg-primary/80/20 rounded-2xl blur-xl"></div>
               </div>
 
               {/* Tech Stack Items - Enhanced */}
@@ -119,7 +119,7 @@ export function HeroSection() {
                 { name: "Tailwind", icon: "🎨", position: "top-12 right-8", color: "bg-cyan-500 text-white shadow-lg", pulse: "" },
                 { name: "Stripe", icon: "S", position: "right-2 top-1/2 -translate-y-1/2", color: "bg-purple-600 text-white shadow-lg", pulse: "" },
                 { name: "MongoDB", icon: "🍃", position: "bottom-12 right-8", color: "bg-green-600 text-white shadow-lg", pulse: "" },
-                { name: "Auth", icon: "🔐", position: "bottom-2 left-1/2 -translate-x-1/2", color: "bg-yellow-500 text-black shadow-lg", pulse: "" },
+                { name: "Auth", icon: "🔐", position: "bottom-2 left-1/2 -translate-x-1/2", color: "bg-primary text-black shadow-lg", pulse: "" },
                 { name: "Email", icon: "📧", position: "bottom-12 left-8", color: "bg-card border border-border text-foreground shadow-lg", pulse: "" },
                 { name: "TypeScript", icon: "TS", position: "left-2 top-1/2 -translate-y-1/2", color: "bg-blue-600 text-white shadow-lg", pulse: "" },
                 { name: "Database", icon: "🗄️", position: "top-12 left-8", color: "bg-card border border-border text-foreground shadow-lg", pulse: "" }
@@ -136,7 +136,7 @@ export function HeroSection() {
                   </div>
 
                   {/* Connection Lines */}
-                  <div className="absolute top-1/2 left-1/2 w-8 h-0.5 bg-gradient-to-r from-yellow-500/50 to-transparent transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+                  <div className="absolute top-1/2 left-1/2 w-8 h-0.5 bg-gradient-to-r from-primary/50 to-transparent transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
                 </div>
               ))}
             </div>
@@ -145,7 +145,7 @@ export function HeroSection() {
             <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-center">
               <div className="bg-card/80 backdrop-blur-sm border border-border rounded-full px-6 py-3 shadow-lg">
                 <p className="text-muted-foreground text-sm font-medium">
-                  <span className="text-yellow-500">+</span> all the boring stuff
+                  <span className="text-primary">+</span> all the boring stuff
                   <span className="text-muted-foreground/70">(SEO, API, support)</span>
                 </p>
               </div>
@@ -154,15 +154,15 @@ export function HeroSection() {
             {/* Enhanced Decorative Elements */}
             <div className="absolute -bottom-8 -right-8">
               <div className="relative">
-                <div className="text-yellow-500 text-4xl font-bold transform rotate-12 animate-bounce">
+                <div className="text-primary text-4xl font-bold transform rotate-12 animate-bounce">
                   ↘
                 </div>
-                <div className="absolute -top-2 -right-2 w-3 h-3 bg-yellow-500 rounded-full animate-ping"></div>
+                <div className="absolute -top-2 -right-2 w-3 h-3 bg-primary rounded-full animate-ping"></div>
               </div>
             </div>
 
             {/* Floating Elements for Visual Interest */}
-            <div className="absolute top-8 -left-4 w-2 h-2 bg-yellow-500/30 rounded-full animate-pulse"></div>
+            <div className="absolute top-8 -left-4 w-2 h-2 bg-primary/30 rounded-full animate-pulse"></div>
             <div className="absolute -top-4 right-12 w-1 h-1 bg-cyan-500/40 rounded-full animate-pulse delay-1000"></div>
             <div className="absolute bottom-16 -left-8 w-1.5 h-1.5 bg-purple-500/30 rounded-full animate-pulse delay-500"></div>
           </div>

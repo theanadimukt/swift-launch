@@ -33,7 +33,7 @@ export function EngagementChart() {
               <div className="flex-1">
                 <div className="h-8 rounded-lg bg-muted overflow-hidden">
                   <div
-                    className="h-full bg-gradient-to-r from-yellow-500 to-orange-500 transition-all duration-500 flex items-center justify-end pr-2"
+                    className="h-full bg-gradient-to-r from-primary to-primary/80 transition-all duration-500 flex items-center justify-end pr-2"
                     style={{ width: `${(item.value / maxValue) * 100}%` }}
                   >
                     <span className="text-xs font-semibold text-white">{item.value}%</span>

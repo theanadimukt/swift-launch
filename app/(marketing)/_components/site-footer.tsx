@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div className="grid md:grid-cols-5 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                 <Zap className="h-6 w-6 text-black" />
               </div>
               <span className="text-2xl font-bold">SwiftLaunch</span>

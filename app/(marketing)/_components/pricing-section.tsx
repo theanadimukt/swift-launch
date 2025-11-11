@@ -7,7 +7,7 @@ export function PricingSection() {
   return (
     <section className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
-        <Badge variant="secondary" className="mb-4 bg-yellow-100 text-yellow-700 dark:bg-yellow-500/20 dark:text-yellow-400 dark:border-yellow-500/30">Pricing</Badge>
+        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/80 dark:border-primary/30">Pricing</Badge>
         <h2 className="text-4xl font-bold text-foreground mb-4">Simple, Transparent Pricing</h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           Choose the plan that fits your needs. One-time payment, lifetime access.
@@ -73,9 +73,9 @@ export function PricingSection() {
             cta: "Get Enterprise"
           }
         ].map((plan, index) => (
-          <Card key={index} className={`relative border border-border shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer bg-card ${plan.popular ? 'ring-2 ring-yellow-500 scale-105' : ''}`}>
+          <Card key={index} className={`relative border border-border shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer bg-card ${plan.popular ? 'ring-2 ring-primary scale-105' : ''}`}>
             {plan.popular && (
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-black font-semibold px-4 py-1 z-10 shadow-lg">
+              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-black font-semibold px-4 py-1 z-10 shadow-lg">
                 Most Popular
               </Badge>
             )}
@@ -92,7 +92,7 @@ export function PricingSection() {
             <CardContent className="space-y-4">
               <Button
                 className={`w-full mb-6 ${plan.popular
-                  ? 'bg-yellow-500 hover:bg-yellow-600 text-black font-semibold shadow-lg'
+                  ? 'bg-primary hover:bg-primary/90 text-black font-semibold shadow-lg'
                   : 'bg-muted hover:bg-muted/80 text-foreground hover:bg-foreground hover:text-background'
                 } transition-all duration-300 group-hover:scale-105`}
                 size="lg"

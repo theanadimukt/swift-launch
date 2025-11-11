@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react"
 export function CTASection() {
   return (
     <section className="container mx-auto px-4 py-20">
-      <div className="bg-yellow-500 rounded-3xl p-12 text-center text-black">
+      <div className="bg-primary rounded-3xl p-12 text-center text-black">
         <h2 className="text-4xl font-bold mb-4">Ready to Get Started?</h2>
         <p className="text-xl mb-8 opacity-90">
           Join thousands of developers who are building amazing products with SwiftLaunch

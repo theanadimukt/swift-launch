@@ -12,7 +12,7 @@ export function CommunityStatsSection() {
 
         <div className="relative z-10 py-16">
           <div className="text-center mb-12">
-            <Badge variant="secondary" className="mb-4 bg-yellow-100 text-yellow-700 dark:bg-yellow-500/20 dark:text-yellow-400 dark:border-yellow-500/30">
+            <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/80 dark:border-primary/30">
               Trusted by Thousands
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Join the Community</h2>
@@ -57,7 +57,7 @@ export function CommunityStatsSection() {
                   <div className={`w-16 h-16 ${stat.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <stat.icon className={`h-8 w-8 ${stat.color}`} />
                   </div>
-                  <div className="text-4xl md:text-5xl font-bold text-foreground mb-3 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors duration-300">
+                  <div className="text-4xl md:text-5xl font-bold text-foreground mb-3 group-hover:text-primary/90 dark:group-hover:text-primary/80 transition-colors duration-300">
                     {stat.number}
                   </div>
                   <div className="text-muted-foreground font-medium text-base md:text-lg">

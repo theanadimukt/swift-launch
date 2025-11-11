@@ -7,7 +7,7 @@ export function FAQSection() {
   return (
     <section className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
-        <Badge variant="secondary" className="mb-4 bg-yellow-100 text-yellow-700 dark:bg-yellow-500/20 dark:text-yellow-400 dark:border-yellow-500/30">FAQ</Badge>
+        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/80 dark:border-primary/30">FAQ</Badge>
         <h2 className="text-4xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           Got questions about pricing? We&apos;ve got answers.
@@ -58,14 +58,14 @@ export function FAQSection() {
               icon: "💰"
             }
           ].map((faq, index) => (
-            <Card key={index} className="group bg-card border border-border/50 hover:border-yellow-500/30 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
+            <Card key={index} className="group bg-card border border-border/50 hover:border-primary/30 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
               <CardHeader className="pb-0">
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-yellow-100 dark:bg-yellow-500/20 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
                     {faq.icon}
                   </div>
                   <div className="flex-1">
-                    <CardTitle className="text-xl font-bold text-foreground leading-tight group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors duration-300">
+                    <CardTitle className="text-xl font-bold text-foreground leading-tight group-hover:text-primary/90 dark:group-hover:text-primary/80 transition-colors duration-300">
                       {faq.question}
                     </CardTitle>
                   </div>
@@ -83,9 +83,9 @@ export function FAQSection() {
 
       {/* Enhanced CTA Section */}
       <div className="mt-16 text-center">
-        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-2xl p-8 max-w-2xl mx-auto border border-yellow-200 dark:border-yellow-500/20">
+        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-2xl p-8 max-w-2xl mx-auto border border-primary/20 dark:border-primary/20">
           <div className="mb-4">
-            <div className="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+            <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
               <Users className="h-8 w-8 text-black" />
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-2">Still have questions?</h3>
@@ -95,11 +95,11 @@ export function FAQSection() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" className="border-yellow-500 text-yellow-600 hover:bg-yellow-500 hover:text-black dark:text-yellow-400 dark:hover:text-black font-semibold">
+            <Button variant="outline" className="border-primary text-primary/90 hover:bg-primary hover:text-black dark:text-primary/80 dark:hover:text-black font-semibold">
               <Users className="mr-2 h-4 w-4" />
               Join Discord Community
             </Button>
-            <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold shadow-lg">
+            <Button className="bg-primary hover:bg-primary/90 text-black font-semibold shadow-lg">
               Contact Support
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
