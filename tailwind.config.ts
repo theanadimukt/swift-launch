@@ -9,6 +9,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        body: ['var(--font-body)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        'body': ['1rem', { lineHeight: '1.7' }],
+        'body-sm': ['0.875rem', { lineHeight: '1.6' }],
+        'body-lg': ['1.125rem', { lineHeight: '1.7' }],
+        'h1': ['2.5rem', { lineHeight: '1.12', letterSpacing: '-0.01em' }],
+        'h2': ['2rem', { lineHeight: '1.12', letterSpacing: '-0.01em' }],
+        'display-1': ['4rem', { lineHeight: '1.12', letterSpacing: '-0.01em' }],
+        'display-2': ['3rem', { lineHeight: '1.12', letterSpacing: '-0.01em' }],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
