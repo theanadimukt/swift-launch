@@ -7,7 +7,7 @@ export function UseCasesSection() {
   return (
     <section className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
-        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/80 dark:border-primary/30">Use Cases</Badge>
+        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary text-white/20 dark:text-primary/80 dark:border-primary/30">Use Cases</Badge>
         <h2 className="text-4xl font-bold text-foreground mb-4">Perfect For Any Project</h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           From startups to enterprise, SwiftLaunch adapts to your needs and scales with your growth
@@ -56,7 +56,7 @@ export function UseCasesSection() {
 
             {/* Popularity Badge */}
             <div className="absolute top-4 right-4 z-10">
-              <Badge className="bg-primary text-black text-xs font-semibold px-2 py-1">
+              <Badge className="bg-primary text-white text-black text-xs font-semibold px-2 py-1">
                 {useCase.popularity}
               </Badge>
             </div>
@@ -148,11 +148,11 @@ export function UseCasesSection() {
             Whether you&apos;re building a simple landing page or a complex SaaS platform, SwiftLaunch has everything you need to get started.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-primary hover:bg-primary/90 text-black font-semibold shadow-lg">
+            <Button className="bg-primary hover:bg-primary text-white/90 text-black font-semibold shadow-lg">
               <Rocket className="mr-2 h-4 w-4" />
               Start Building Now
             </Button>
-            <Button variant="outline" className="border-primary text-primary/90 hover:bg-primary hover:text-black dark:text-primary/80 dark:hover:text-black">
+            <Button variant="outline" className="border-primary text-primary/90 hover:bg-primary text-white hover:text-black dark:text-primary/80 dark:hover:text-black">
               <Globe className="mr-2 h-4 w-4" />
               View Examples
             </Button>

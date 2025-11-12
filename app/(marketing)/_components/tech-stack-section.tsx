@@ -1,12 +1,41 @@
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle, Rocket, Star, Zap } from "lucide-react"
+import { NextJsIcon, TypeScriptIcon, TailwindIcon } from "@/components/icons/tech-icons"
+
+type TechItem = {
+  name: string
+  description: string
+  icon: React.ComponentType<{ className?: string }>
+  features: string[]
+}
 
 export function TechStackSection() {
+  const mainTechnologies: TechItem[] = [
+    {
+      name: "Next.js 14",
+      description: "React framework with App Router",
+      icon: NextJsIcon,
+      features: ["Server Components", "App Router", "Static Generation"]
+    },
+    {
+      name: "TypeScript",
+      description: "Type-safe JavaScript development",
+      icon: TypeScriptIcon,
+      features: ["Type Safety", "IntelliSense", "Error Prevention"]
+    },
+    {
+      name: "Tailwind CSS",
+      description: "Utility-first CSS framework",
+      icon: TailwindIcon,
+      features: ["Responsive Design", "Custom Components", "Dark Mode"]
+    }
+  ]
+
   return (
     <section className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
-        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/80 dark:border-primary/30">Technology Stack</Badge>
+        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-white/80 dark:border-primary/30">Technology Stack</Badge>
         <h2 className="text-4xl font-bold text-foreground mb-4">Built with the Best</h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           Powered by industry-leading technologies and frameworks for modern web development
@@ -15,32 +44,15 @@ export function TechStackSection() {
 
       {/* Main Technologies Grid - Featured */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
-        {[
-          {
-            name: "Next.js 14",
-            description: "React framework with App Router",
-            icon: "⚡",
-            features: ["Server Components", "App Router", "Static Generation"]
-          },
-          {
-            name: "TypeScript",
-            description: "Type-safe JavaScript development",
-            icon: "📘",
-            features: ["Type Safety", "IntelliSense", "Error Prevention"]
-          },
-          {
-            name: "Tailwind CSS",
-            description: "Utility-first CSS framework",
-            icon: "🎨",
-            features: ["Responsive Design", "Custom Components", "Dark Mode"]
-          }
-        ].map((tech, index) => (
-          <Card key={index} className="relative overflow-hidden bg-card border border-border shadow-xl hover:shadow-2xl group hover:scale-105 transition-all duration-300">
-            <CardHeader className="pb-3">
-              <div className="flex items-center space-x-3 mb-3">
-                <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center group-hover:bg-primary/90 transition-colors duration-300 shadow-lg">
-                  <span className="text-2xl">{tech.icon}</span>
-                </div>
+        {mainTechnologies.map((tech, index) => {
+          const IconComponent = tech.icon
+          return (
+            <Card key={index} className="relative overflow-hidden bg-card border border-border shadow-xl hover:shadow-2xl group hover:scale-105 transition-all duration-300">
+              <CardHeader className="pb-3">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="w-12 h-12 bg-background rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg border border-border p-2">
+                    <IconComponent className="w-full h-full" />
+                  </div>
                 <div>
                   <CardTitle className="text-xl font-bold text-foreground">{tech.name}</CardTitle>
                   <p className="text-sm text-muted-foreground">{tech.description}</p>
@@ -57,12 +69,9 @@ export function TechStackSection() {
                 ))}
               </div>
             </CardContent>
-
-            {/* Decorative Elements */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full transform translate-x-16 -translate-y-16"></div>
-            <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full transform -translate-x-12 translate-y-12"></div>
           </Card>
-        ))}
+          )
+        })}
       </div>
 
       {/* Supporting Technologies */}

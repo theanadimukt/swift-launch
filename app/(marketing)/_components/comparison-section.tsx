@@ -7,7 +7,7 @@ export function ComparisonSection() {
   return (
     <section className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
-        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/80 dark:border-primary/30">Why Choose SwiftLaunch</Badge>
+        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary text-white/20 dark:text-primary/80 dark:border-primary/30">Why Choose SwiftLaunch</Badge>
         <h2 className="text-4xl font-bold text-foreground mb-4">SwiftLaunch vs. Building from Scratch</h2>
       </div>
 
@@ -111,7 +111,7 @@ export function ComparisonSection() {
         <div className="text-muted-foreground mb-4 flex items-center justify-center">
           <span>⬇️ There&apos;s an easier way</span>
         </div>
-        <Button size="lg" className="bg-primary hover:bg-primary/90 text-black font-semibold">
+        <Button size="lg" className="bg-primary hover:bg-primary text-white/90 text-black font-semibold">
           Skip the Setup, Start Building <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
       </div>

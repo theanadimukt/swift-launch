@@ -12,7 +12,7 @@ export function CommunityStatsSection() {
 
         <div className="relative z-10 py-16">
           <div className="text-center mb-12">
-            <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/80 dark:border-primary/30">
+            <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-white/80 dark:border-primary/30">
               Trusted by Thousands
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Join the Community</h2>

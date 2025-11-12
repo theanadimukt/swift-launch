@@ -6,7 +6,7 @@ export function FeaturesSection() {
   return (
     <section id="features" className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
-        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/80 dark:border-primary/30">Features</Badge>
+        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-white/80 dark:border-primary/30">Features</Badge>
         <h2 className="text-4xl font-bold text-foreground mb-4">Everything You Need</h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           Built with modern technologies and best practices to help you ship faster

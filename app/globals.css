@@ -54,6 +54,16 @@
     @apply border-border;
   }
 
+  ::selection {
+    background-color: #B88066;
+    color: #ffffff;
+  }
+
+  ::-moz-selection {
+    background-color: #B88066;
+    color: #ffffff;
+  }
+
   body {
     @apply bg-background text-foreground font-body;
     font-size: 1rem;
