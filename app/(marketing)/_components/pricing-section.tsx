@@ -1,17 +1,44 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight, CheckCircle, Shield, Users } from "lucide-react"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
+import { CheckCircle, ArrowRight, Shield, Users } from "lucide-react"
 
 export function PricingSection() {
   return (
-    <section className="container mx-auto px-4 py-20">
+    <section id="pricing" className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
-        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary text-white/20 dark:text-primary/80 dark:border-primary/30">Pricing</Badge>
+        <Badge variant="secondary" className="mb-4 bg-yellow-100 text-yellow-700 dark:bg-yellow-500/20 dark:text-yellow-400 dark:border-yellow-500/30">Pricing</Badge>
         <h2 className="text-4xl font-bold text-foreground mb-4">Simple, Transparent Pricing</h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           Choose the plan that fits your needs. One-time payment, lifetime access.
         </p>
+
+        {/* Customer Success Stories */}
+        <div className="flex items-center justify-center space-x-6 mt-8">
+          <div className="flex items-center space-x-3">
+            <img src="/images/avatar.png" alt="Happy Customer" className="w-12 h-12 rounded-full border-2 border-green-200 object-cover shadow-lg" />
+            <div className="text-left">
+              <p className="text-base font-semibold text-foreground">Saved 3 weeks</p>
+              <p className="text-sm text-muted-foreground">on MVP development</p>
+            </div>
+          </div>
+          <div className="hidden sm:block w-px h-12 bg-border"></div>
+          <div className="flex items-center space-x-3">
+            <img src="/images/avatar.png" alt="Happy Customer" className="w-12 h-12 rounded-full border-2 border-blue-200 object-cover shadow-lg" />
+            <div className="text-left">
+              <p className="text-base font-semibold text-foreground">$50K revenue</p>
+              <p className="text-sm text-muted-foreground">in first month</p>
+            </div>
+          </div>
+          <div className="hidden sm:block w-px h-12 bg-border"></div>
+          <div className="flex items-center space-x-3">
+            <img src="/images/avatar.png" alt="Happy Customer" className="w-12 h-12 rounded-full border-2 border-purple-200 object-cover shadow-lg" />
+            <div className="text-left">
+              <p className="text-base font-semibold text-foreground">5x faster</p>
+              <p className="text-sm text-muted-foreground">than from scratch</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -73,9 +100,9 @@ export function PricingSection() {
             cta: "Get Enterprise"
           }
         ].map((plan, index) => (
-          <Card key={index} className={`relative border border-border shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer bg-card ${plan.popular ? 'ring-2 ring-primary scale-105' : ''}`}>
+          <Card key={index} className={`relative border border-border shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer bg-card ${plan.popular ? 'ring-2 ring-yellow-500 scale-105' : ''}`}>
             {plan.popular && (
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-black font-semibold px-4 py-1 z-10 shadow-lg">
+              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-yellow-500 to-orange-500 text-black font-semibold px-4 py-1 z-10 shadow-lg">
                 Most Popular
               </Badge>
             )}
@@ -92,7 +119,7 @@ export function PricingSection() {
             <CardContent className="space-y-4">
               <Button
                 className={`w-full mb-6 ${plan.popular
-                  ? 'bg-primary text-white hover:bg-primary/90 hover:text-white font-semibold shadow-lg'
+                  ? 'bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-black font-semibold shadow-lg'
                   : 'bg-muted hover:bg-muted/80 text-foreground hover:bg-foreground hover:text-background'
                 } transition-all duration-300 group-hover:scale-105`}
                 size="lg"
@@ -102,7 +129,7 @@ export function PricingSection() {
               </Button>
 
               <div className="space-y-3">
-                <div className="text-sm font-semibold text-foreground mb-3">What&apos;s included:</div>
+                <div className="text-sm font-semibold text-foreground mb-3">What's included:</div>
                 {plan.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-start space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />

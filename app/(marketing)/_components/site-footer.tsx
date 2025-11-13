@@ -1,16 +1,18 @@
-import { Zap, Github, Twitter, Linkedin } from "lucide-react"
 import Link from "next/link"
+import { Github, Twitter, Linkedin } from "lucide-react"
 
 export function SiteFooter() {
   return (
-    <footer className="bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-white py-16">
+    <footer className="text-slate-900 dark:text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-5 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center">
-                <Zap className="h-6 w-6 text-black" />
-              </div>
+              <img
+                src="/images/logo.png"
+                alt="SwiftLaunch Logo"
+                className="w-16 h-16 rounded-lg object-contain"
+              />
               <span className="text-2xl font-bold">SwiftLaunch</span>
             </div>
             <p className="text-slate-600 dark:text-slate-400 mb-6 max-w-md">

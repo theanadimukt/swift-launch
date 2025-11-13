@@ -1,13 +1,13 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Rocket, Globe, Smartphone, Database, CheckCircle } from "lucide-react"
 
 export function UseCasesSection() {
   return (
     <section className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
-        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary text-white/20 dark:text-primary/80 dark:border-primary/30">Use Cases</Badge>
+        <Badge variant="secondary" className="mb-4 bg-yellow-100 text-yellow-700 dark:bg-yellow-500/20 dark:text-yellow-400 dark:border-yellow-500/30">Use Cases</Badge>
         <h2 className="text-4xl font-bold text-foreground mb-4">Perfect For Any Project</h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           From startups to enterprise, SwiftLaunch adapts to your needs and scales with your growth
@@ -56,19 +56,24 @@ export function UseCasesSection() {
 
             {/* Popularity Badge */}
             <div className="absolute top-4 right-4 z-10">
-              <Badge className="bg-primary text-white text-black text-xs font-semibold px-2 py-1">
+              <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-black text-xs font-semibold px-2 py-1">
                 {useCase.popularity}
               </Badge>
             </div>
 
             <CardHeader className="relative z-10 p-8">
+              {/* User Avatar */}
+              <div className="flex justify-center mb-4">
+                <img src="/images/avatar.png" alt="SwiftLaunch User" className="w-12 h-12 rounded-full border-2 border-white shadow-lg object-cover" />
+              </div>
+
               {/* Icon with Gradient */}
               <div className={`w-20 h-20 mb-6 bg-gradient-to-br ${useCase.gradient} rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                 <useCase.icon className="h-10 w-10 text-white" />
               </div>
 
               {/* Content */}
-              <CardTitle className="text-2xl font-bold text-foreground mb-4 text-center group-hover:text-primary/90 dark:group-hover:text-primary/80 transition-colors duration-300">
+              <CardTitle className="text-2xl font-bold text-foreground mb-4 text-center group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors duration-300">
                 {useCase.title}
               </CardTitle>
 
@@ -123,7 +128,7 @@ export function UseCasesSection() {
             companies: ["Coursera", "Udemy", "Khan Academy"]
           }
         ].map((industry, index) => (
-          <Card key={index} className="bg-card border border-border hover:border-primary/30 shadow-md hover:shadow-lg transition-all duration-300 p-6">
+          <Card key={index} className="bg-card border border-border hover:border-yellow-500/30 shadow-md hover:shadow-lg transition-all duration-300 p-6">
             <div className="text-center">
               <div className="text-4xl mb-4">{industry.icon}</div>
               <h4 className="text-xl font-semibold text-foreground mb-2">{industry.industry}</h4>
@@ -142,17 +147,17 @@ export function UseCasesSection() {
 
       {/* Bottom CTA */}
       <div className="text-center mt-16">
-        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-2xl p-8 max-w-3xl mx-auto border border-primary/20 dark:border-primary/20">
+        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-2xl p-8 max-w-3xl mx-auto border border-yellow-200 dark:border-yellow-500/20">
           <h3 className="text-2xl font-bold text-foreground mb-3">Ready to Build Your Project?</h3>
           <p className="text-muted-foreground mb-6 text-lg">
-            Whether you&apos;re building a simple landing page or a complex SaaS platform, SwiftLaunch has everything you need to get started.
+            Whether you're building a simple landing page or a complex SaaS platform, SwiftLaunch has everything you need to get started.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-primary hover:bg-primary text-white/90 text-black font-semibold shadow-lg">
+            <Button className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-black font-semibold shadow-lg">
               <Rocket className="mr-2 h-4 w-4" />
               Start Building Now
             </Button>
-            <Button variant="outline" className="border-primary text-primary/90 hover:bg-primary text-white hover:text-black dark:text-primary/80 dark:hover:text-black">
+            <Button variant="outline" className="border-2 border-yellow-500 text-yellow-600 hover:bg-gradient-to-r hover:from-yellow-500 hover:to-orange-500 hover:text-black dark:text-yellow-400 dark:hover:text-black">
               <Globe className="mr-2 h-4 w-4" />
               View Examples
             </Button>

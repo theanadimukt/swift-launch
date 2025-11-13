@@ -1,14 +1,29 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { ArrowRight, CheckCircle, Clock, Zap } from "lucide-react"
+import { Clock, Zap, CheckCircle, ArrowRight } from "lucide-react"
 
 export function ComparisonSection() {
   return (
     <section className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
-        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary text-white/20 dark:text-primary/80 dark:border-primary/30">Why Choose SwiftLaunch</Badge>
+        <Badge variant="secondary" className="mb-4 bg-yellow-100 text-yellow-700 dark:bg-yellow-500/20 dark:text-yellow-400 dark:border-yellow-500/30">Why Choose SwiftLaunch</Badge>
         <h2 className="text-4xl font-bold text-foreground mb-4">SwiftLaunch vs. Building from Scratch</h2>
+
+        {/* Developer Personas */}
+        <div className="flex items-center justify-center space-x-8 mt-8">
+          <div className="text-center">
+            <img src="/images/avatar.png" alt="Frustrated Developer" className="w-16 h-16 rounded-full border-3 border-red-200 object-cover shadow-lg mx-auto mb-2" />
+            <p className="text-base text-red-600 dark:text-red-400 font-medium">Overwhelmed Developer</p>
+            <p className="text-sm text-muted-foreground">Spending weeks on setup</p>
+          </div>
+          <div className="text-4xl">VS</div>
+          <div className="text-center">
+            <img src="/images/2.png" alt="Happy Developer" className="w-16 h-16 rounded-full border-3 border-green-200 object-cover shadow-lg mx-auto mb-2" />
+            <p className="text-base text-green-600 dark:text-green-400 font-medium">Smart Developer</p>
+            <p className="text-sm text-muted-foreground">Building features day 1</p>
+          </div>
+        </div>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -18,7 +33,7 @@ export function ComparisonSection() {
             <div className="text-center mb-8">
               <Clock className="h-12 w-12 text-red-500 dark:text-red-400 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-red-700 dark:text-red-300 mb-2">Building from Scratch</h3>
-              <p className="text-red-600 dark:text-red-200/80 text-lg">Time you&apos;ll spend on setup instead of features</p>
+              <p className="text-red-600 dark:text-red-200/80 text-lg">Time you'll spend on setup instead of features</p>
             </div>
 
             <div className="space-y-4 mb-8">
@@ -100,7 +115,7 @@ export function ComparisonSection() {
               <div className="text-center text-green-700 dark:text-green-200">
                 <div className="text-lg font-semibold mb-1">Time Saved:</div>
                 <div className="text-2xl font-bold text-green-600 dark:text-green-300">75+ hours</div>
-                <div className="text-sm text-green-600 dark:text-green-300/80">That&apos;s almost 2 weeks of work!</div>
+                <div className="text-sm text-green-600 dark:text-green-300/80">That's almost 2 weeks of work!</div>
               </div>
             </div>
           </Card>
@@ -109,9 +124,9 @@ export function ComparisonSection() {
 
       <div className="text-center mt-12">
         <div className="text-muted-foreground mb-4 flex items-center justify-center">
-          <span>⬇️ There&apos;s an easier way</span>
+          <span>⬇️ There's an easier way</span>
         </div>
-        <Button size="lg" className="bg-primary hover:bg-primary text-white/90 text-black font-semibold">
+        <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-black font-semibold">
           Skip the Setup, Start Building <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
       </div>

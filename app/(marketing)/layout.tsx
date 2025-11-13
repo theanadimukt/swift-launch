@@ -1,17 +1,19 @@
-import type { ReactNode } from "react"
-import type { Metadata } from "next"
-
-import { siteConfig } from "@/config/site"
+import type { Metadata } from 'next'
+import { ThemeProvider } from '@/contexts/theme-context'
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — ${siteConfig.tagline}`,
-  description: siteConfig.description,
+  title: 'SwiftLaunch - Ship your startup in days, not weeks',
+  description: 'The NextJS boilerplate with all you need to build your SaaS, AI tool, or any other web app and make your first $ online fast.',
 }
 
-export default function MarketingLayout({ children }: { children: ReactNode }) {
+export default function MarketingLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <div className="flex min-h-screen flex-col bg-background text-foreground">
-      <main className="flex-1">{children}</main>
-    </div>
+    <ThemeProvider>
+      {children}
+    </ThemeProvider>
   )
 }

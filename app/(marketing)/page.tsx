@@ -4,17 +4,16 @@ import {
   SiteHeader,
   HeroSection,
   StatsSection,
-  CommunityStatsSection,
   FeaturesSection,
   TechStackSection,
   TestimonialsSection,
   UseCasesSection,
   PricingSection,
-  FAQSection,
+  FaqSection,
   ComparisonSection,
-  CTASection,
+  CtaSection,
   SiteFooter
-} from "./_components"
+} from './_components'
 
 export default function HomePage() {
   return (
@@ -22,15 +21,14 @@ export default function HomePage() {
       <SiteHeader />
       <HeroSection />
       <StatsSection />
-      <CommunityStatsSection />
       <FeaturesSection />
       <TechStackSection />
       <TestimonialsSection />
       <UseCasesSection />
       <PricingSection />
-      <FAQSection />
+      <FaqSection />
       <ComparisonSection />
-      <CTASection />
+      <CtaSection />
       <SiteFooter />
     </div>
   )

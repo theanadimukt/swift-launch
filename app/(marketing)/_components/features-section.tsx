@@ -1,16 +1,28 @@
 import { Badge } from "@/components/ui/badge"
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Rocket, Shield, Users, Star, Zap, CheckCircle, Globe, Database, Smartphone } from "lucide-react"
 
 export function FeaturesSection() {
   return (
     <section id="features" className="container mx-auto px-4 py-20">
       <div className="text-center mb-16">
-        <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-white/80 dark:border-primary/30">Features</Badge>
+        <Badge variant="secondary" className="mb-4 bg-yellow-100 text-yellow-700 dark:bg-yellow-500/20 dark:text-yellow-400 dark:border-yellow-500/30">Features</Badge>
         <h2 className="text-4xl font-bold text-foreground mb-4">Everything You Need</h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           Built with modern technologies and best practices to help you ship faster
         </p>
+
+        {/* Developer Endorsement */}
+        <div className="flex items-center justify-center space-x-4 mt-8">
+          <div className="flex -space-x-2">
+            <img src="/images/avatar.png" alt="SwiftLaunch Developer" className="w-10 h-10 rounded-full border-2 border-background object-cover shadow-lg" />
+            <img src="/images/avatar.png" alt="SwiftLaunch Developer" className="w-10 h-10 rounded-full border-2 border-background object-cover shadow-lg" />
+            <img src="/images/avatar.png" alt="SwiftLaunch Developer" className="w-10 h-10 rounded-full border-2 border-background object-cover shadow-lg" />
+          </div>
+          <p className="text-base text-muted-foreground">
+            <span className="font-semibold text-foreground">2,340+ developers</span> building with SwiftLaunch
+          </p>
+        </div>
       </div>
 
       {/* Featured Highlights */}
@@ -44,7 +56,7 @@ export function FeaturesSection() {
               <div className={`w-16 h-16 bg-gradient-to-br ${feature.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                 <feature.icon className="h-8 w-8 text-white" />
               </div>
-              <CardTitle className="text-2xl font-bold text-foreground mb-3 group-hover:text-primary/90 dark:group-hover:text-primary/80 transition-colors duration-300">
+              <CardTitle className="text-2xl font-bold text-foreground mb-3 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors duration-300">
                 {feature.title}
               </CardTitle>
               <CardDescription className="text-muted-foreground text-lg leading-relaxed mb-6">
@@ -77,8 +89,8 @@ export function FeaturesSection() {
             title: "Easy Customization",
             description: "Flexible components and styling that adapts to your brand",
             icon: Zap,
-            color: "text-primary/90 dark:text-primary/80",
-            bgColor: "bg-primary/10 dark:bg-yellow-900/30"
+            color: "text-yellow-600 dark:text-yellow-400",
+            bgColor: "bg-yellow-100 dark:bg-yellow-900/30"
           },
           {
             title: "Production Ready",
@@ -115,7 +127,7 @@ export function FeaturesSection() {
                 <feature.icon className={`h-6 w-6 ${feature.color}`} />
               </div>
               <div className="flex-1">
-                <CardTitle className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary/90 dark:group-hover:text-primary/80 transition-colors duration-300">
+                <CardTitle className="text-lg font-semibold text-foreground mb-2 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors duration-300">
                   {feature.title}
                 </CardTitle>
                 <CardDescription className="text-muted-foreground text-base leading-relaxed">
